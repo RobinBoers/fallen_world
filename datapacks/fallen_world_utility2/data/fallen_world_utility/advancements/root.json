@@ -1,0 +1,26 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Fallen World",
+            "obfuscated": true
+        },
+        "description": {
+            "text": "You're not suppost see this. Please contact me at robin@geheimesite.nl",
+            "obfuscated": true
+        },
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/block/polished_blackstone.png"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

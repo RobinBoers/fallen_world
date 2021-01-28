@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        {
+            "item": "minecraft:stick"
+        },
+        {
+            "item": "minecraft:enchanted_book"
+        },
+        {
+            "item": "minecraft:experience_bottle"
+        }
+    ],
+    "result": {
+        "item": "minecraft:debug_stick",
+        "count": 1
+    }
+}

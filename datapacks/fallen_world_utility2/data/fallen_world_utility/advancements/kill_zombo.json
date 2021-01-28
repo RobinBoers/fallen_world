@@ -1,0 +1,17 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "killed": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "fallen_world:custom_mobs/kill_zombo"
+    },
+    "parent": "fallen_world_utility:root"
+}

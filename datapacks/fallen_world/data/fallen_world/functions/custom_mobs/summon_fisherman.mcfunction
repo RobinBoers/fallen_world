@@ -1,0 +1,1 @@
+summon villager ~ ~ ~ {NoGravity:0b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,AbsorptionAmount:255f,Willing:0b,Tags:["Fisherman1","npc"],CustomName:'{"text":"Fisherman"}',VillagerData:{level:99,profession:"minecraft:fisherman",type:"minecraft:taiga"},Offers:{}}

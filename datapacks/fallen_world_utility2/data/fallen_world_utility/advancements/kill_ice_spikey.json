@@ -1,0 +1,17 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "kill": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:ravager"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "fallen_world:dungeon/mobs/killed_ice_spikey"
+    },
+    "parent": "fallen_world_utility:root"
+}

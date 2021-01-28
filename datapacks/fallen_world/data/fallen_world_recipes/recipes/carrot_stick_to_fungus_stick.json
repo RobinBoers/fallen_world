@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:carrot_on_a_stick"
+    },
+    "addition": {
+        "item": "minecraft:warped_fungus"
+    },
+    "result": {
+        "item": "minecraft:warped_fungus_on_a_stick"
+    }
+}

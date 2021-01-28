@@ -1,0 +1,1 @@
+summon villager ~ ~ ~ {NoGravity:0b,Silent:1b,Invulnerable:1b,CustomNameVisible:1b,PersistenceRequired:1b,NoAI:1b,CanPickUpLoot:0b,AbsorptionAmount:255f,Willing:0b,Rotation:[0F,2F],Tags:["Smith2","npc"],CustomName:'{"text":"Armor Smith"}',VillagerData:{level:99,profession:"minecraft:weaponsmith",type:"minecraft:plains"},Offers:{}}

@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "GGG",
+        "G/G"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:warped_planks"
+        },
+        "G": {
+            "item": "minecraft:gold_block"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "minecraft:bell",
+        "count": 1
+    },
+    "group": "bell"
+}

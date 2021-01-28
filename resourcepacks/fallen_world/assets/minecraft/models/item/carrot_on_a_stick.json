@@ -1,0 +1,12 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/carrot_on_a_stick"
+    },
+    "overrides": [
+        {"predicate": {"custom_model_data": 1},"model": "item/tools/wand"},
+        {"predicate": {"custom_model_data": 3},"model": "item/tools/vulcano_wand"},
+        {"predicate": {"custom_model_data": 4},"model": "item/tools/ice_wand"},
+        {"predicate": {"custom_model_data": 5},"model": "item/tools/air_wand"}
+    ]
+}

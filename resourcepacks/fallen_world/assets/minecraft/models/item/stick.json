@@ -1,0 +1,12 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/stick"
+    },
+    "overrides": [
+        {"predicate": {"custom_model_data": 1},"model": "item/painting/red_brush"},
+        {"predicate": {"custom_model_data": 2},"model": "item/painting/blue_brush"},
+        {"predicate": {"custom_model_data": 3},"model": "item/painting/green_brush"},
+        {"predicate": {"custom_model_data": 4},"model": "item/painting/yellow_brush"}
+    ]
+}

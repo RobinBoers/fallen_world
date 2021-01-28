@@ -1,0 +1,15 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "fallen_world_tools:stone_hammer"
+            }
+        }
+    },
+    "rewards": {
+        "function": "fallen_world_tools:craft_stone_hammer"
+    },
+    "parent": "fallen_world_utility:root"
+}

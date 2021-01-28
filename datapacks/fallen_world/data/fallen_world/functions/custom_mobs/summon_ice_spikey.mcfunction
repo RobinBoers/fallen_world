@@ -1,0 +1,1 @@
+summon ravager 237 164 -150 {CustomNameVisible:1b,CanPickUpLoot:0b,Health:500f,PatrolLeader:0b,Patrolling:0b,HasRaidGoal:0b,CanJoinRaid:0b,Tags:["IceSpikey"],CustomName:'{"text":"[Ice Spikey]","color":"blue","italic":false}',Attributes:[{Name:generic.max_health,Base:500}]}
