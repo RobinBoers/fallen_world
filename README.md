@@ -12,7 +12,8 @@ This project uses multiple namespaces:
 
 If you want to see more, watch this video: <https://www.youtube.com/watch?v=5FoCYP8VX8I>
 
-**Note:** Yes, I do use Wurst in the video. No, I don't hack on public servers. But who said I can't cheat on my own worlds?
+**Note:** Yes, I do use Wurst in the video. No, I don't hack on public servers.  
+But who said I can't cheat on my own worlds?
 
 ## Stuff included
 
@@ -52,8 +53,9 @@ I also use some datapacks not made by me. I use the following datapacks:
 
 ## Contributions
 
-If you have cool ideas, bugfixes, suggestions or anything else, feel free to contribute to the project by making a pull request or just sending me an e-mail at roin@geheimesite.nl
+If you have cool ideas, bugfixes, suggestions or anything else, feel free to contribute to the project by making a pull request or just sending me an e-mail at robin@geheimesite.nl
 
 ## The map
 
-The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net). If you want the map, send me an e-mail at robin@geheimesite.nl
+The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net).  
+If you want the map, send me an e-mail at robin@geheimesite.nl
