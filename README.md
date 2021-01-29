@@ -1,6 +1,6 @@
 # fallen_world
 
-This is one of those projects you start but never end. It is a Minecraft RPG, but without any plugins or stuff. It's all vanilla minecraft commands, scoreboards and loottables.
+This is a Minecraft RPG, but without any plugins or stuff. It's all vanilla minecraft commands, scoreboards and loottables.
 
 Some great people helped me with this project. If you want to see all of them, take a look at the [credits](CREDITS.md).
 
@@ -11,7 +11,7 @@ This project uses multiple namespaces:
 - **fallen_world_tools:** used for functions to actually craft the tools
 - **fallen_world_utility:** used for advancements to trigger events
 
-If you want to see more, watch this video: <https://www.youtube.com/watch?v=5FoCYP8VX8I>
+If you want to see it in action, watch this video: <https://www.youtube.com/watch?v=5FoCYP8VX8I>
 
 **Note:** Yes, I do use Wurst in the video. No, I don't hack on public servers.  
 But who said I can't cheat on my own worlds?
@@ -20,7 +20,7 @@ But who said I can't cheat on my own worlds?
 
 ### Done
 
-This project is far from completion. But these are the thing included:
+This project is far from completion. But these are the things included:
 
 - Dungeons
 - Custom menu
@@ -38,7 +38,7 @@ This project is far from completion. But these are the thing included:
 
 ### To DO
 
-These are the thing I still need to do:
+These are the things I still need to do:
 
 - Fix mob armor
 - Balance combat / spells system
@@ -47,7 +47,7 @@ These are the thing I still need to do:
 
 ## Other datapacks
 
-I also use some datapacks not made by me. I use the following datapacks:
+In the video I also used two other packs which are not made by me.  
 
 - [Damage Icons](https://www.bluecommander.net/damage-icons.html) (BlueCommander)
 - [Mob health display](https://www.youtube.com/watch?v=A9H3U8YEm98) (Cloud Wolf)
@@ -58,5 +58,4 @@ If you have cool ideas, bugfixes, suggestions or anything else, feel free to con
 
 ## The map
 
-The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net).  
-If you want the map, send me an e-mail at robin@geheimesite.nl
+The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net). The map and the datapack are closely intergrated into one and other, so if you want the map, send me an e-mail at robin@geheimesite.nl
