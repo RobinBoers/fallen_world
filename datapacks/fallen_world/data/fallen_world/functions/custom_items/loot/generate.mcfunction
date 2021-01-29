@@ -1,3 +1,5 @@
+# This function generates loot in chests around the map
+
 ### Lava chest in field
 fill -34 34 -224 -34 34 -224 air
 setblock -34 34 -224 chest[type=single]{LootTable:"fallen_world:loot_boxes/loot_chest_fields",CustomName:'{"text":"[Level 1] Loot Chest"}'} replace

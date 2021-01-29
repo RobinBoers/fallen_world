@@ -1,3 +1,5 @@
+# Generate loot in Blackstone Dungeon
+
 fill -129 62 -313 -129 62 -313 air
 setblock -129 62 -313 chest[facing=east]{LootTable:"fallen_world:loot_boxes/loot_chest_forest",CustomName:'{"text":"[Level 2] Loot Chest"}'}
 

@@ -1,5 +1,10 @@
 #@@@@@@@@@ Quest System @@@@@@@@@#
 
+# This system works wit a score. When entering a house, your score will be set. When 
+# clicking a villager, the score will increase, and a dialog will play. Then it increases
+# the score by one, so the dialog will not endlessly play. When you click the villager
+# again, the score is increased, and a new line of dialog will be played.
+
 ### Reset dialogVill to prevent players from starting dialog when interacting with regular villagers
 execute as @a if entity @s[scores={dialogVill=1}] run scoreboard players set @s dialogVill 0
 

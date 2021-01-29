@@ -11,7 +11,7 @@
 schedule function fallen_world:loop60t 60t
 
 
-### Anti-Cheat (forbidden items)
+### Anti-Cheat (illegal items)
 clear @a[gamemode=!creative] tnt
 clear @a[gamemode=!creative] bedrock
 clear @a[gamemode=!creative] barrier

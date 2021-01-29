@@ -1,3 +1,6 @@
+# This is an old file. The new spell system is located 
+# in the left-spells and spells directories
+
 ### Cast lightning spell (runs as at player casting the spell)
 
 execute as @a[scores={clickStick=1..,mana=1..}] run tag @s add castingSpell

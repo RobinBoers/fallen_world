@@ -9,6 +9,7 @@ This project uses multiple namespaces:
 - **fallen_world:** this namespace is used for most functions
 - **fallen_world_recipes:** used for custom crafting recipes
 - **fallen_world_tools:** used for functions to actually craft the tools
+- **fallen_world_utility:** used for advancements to trigger events
 
 If you want to see more, watch this video: <https://www.youtube.com/watch?v=5FoCYP8VX8I>
 
@@ -23,7 +24,7 @@ This project is far from completion. But these are the thing included:
 
 - Dungeons
 - Custom menu
-- NPC's
+- NPC's (with dialog)
 - Custom map
 - Custom health system
 - Custom items
