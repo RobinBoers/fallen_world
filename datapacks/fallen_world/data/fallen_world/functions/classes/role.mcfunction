@@ -1,5 +1,8 @@
 ### Roles
 
+# This function is used to assign players to the right team when chooising a class. This function also handles stuff like class-specific power ups.
+
+# Admins can't be in any class.
 execute as @a[team=admin] run scoreboard players set @s Classes 0
 
 ### Choose Warrior

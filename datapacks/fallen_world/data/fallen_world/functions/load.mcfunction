@@ -20,9 +20,6 @@ scoreboard objectives add buyItem trigger
 scoreboard objectives add rubyInput trigger
 scoreboard objectives add rubyOutput trigger
 
-scoreboard objectives add clickStick minecraft.used:carrot_on_a_stick
-
-scoreboard objectives add attackCooldown dummy
 scoreboard objectives add usedWand minecraft.used:carrot_on_a_stick
 scoreboard objectives add usedLeftWand minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add element dummy

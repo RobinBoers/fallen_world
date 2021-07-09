@@ -1,6 +1,5 @@
 ### Select subcategory when casting spell (runs at as player) ###
 
-scoreboard players set @s attackCooldown 0
 scoreboard players set @s usedLeftWand 0
 
 execute if entity @s[gamemode=!creative,gamemode=!spectator,scores={mana=1..}] run scoreboard players remove @s mana 1

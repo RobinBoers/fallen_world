@@ -14,7 +14,7 @@ function fallen_world:custom_items/enchantments
 function fallen_world:quest/dialog
 function fallen_world:quest/npc
 
-### Enable stuff
+### Enable triggers
 scoreboard players enable @a warp
 scoreboard players enable @a currentQuest
 scoreboard players enable @a Classes
@@ -95,16 +95,18 @@ execute as @a[scores={warp=1..}] run scoreboard players set @s warp 0
 
 #@@@@@@@@@ Music System @@@@@@@@@#
 
-# put this in a commandblock to make it loc based
+# Put this in a command block to make it location based
 execute as @a[scores={song1=..0}] run scoreboard players set @s song1 3380
 execute as @a[scores={song1=3380}] at @s run playsound music_disc.wait music @s ~ ~ ~ 2
 execute as @a[scores={song1=1..}] run scoreboard players remove @s song1 1
 
 #@@@@@@@@@ Shop System @@@@@@@@@#
 
+# Only run this function as players that actually buy stuff to 
+# prevent a lot of lag with many players
 execute as @a[scores={buyItem=1..}] run function fallen_world:custom_items/shop
 
-### Input or Output rubys
+### Input or Output rubys (bank)
 
 execute as @a[scores={rubyOutput=1,rubys=0}] run tellraw @s "§cNot enough Rubys!"
 execute as @a[scores={rubyOutput=1,rubys=1..}] run give @s emerald{CustomModelData:1,display:{Name:'{"italic":false,"color":"red","text":"Ruby"}'}} 1
@@ -128,11 +130,8 @@ execute as @a at @s unless block ~ ~ ~ water run scoreboard players set @s touch
 
 execute as @a[scores={touchingWater=1}] run function fallen_world:stats/checktotem
 
-# Play sound when hurt
+# Play a sound when getting hurt
 # execute at @e[tag=hurt] run playsound minecraft:block.note_block.bell master @a ~ ~ ~ 1
-
-# Attack cooldown for weapons (not used anymore)
-scoreboard players add @a attackCooldown 1
 
 scoreboard players set @a defenceFactor 20
 
@@ -177,7 +176,6 @@ execute as @a if entity @s[tag=dead] run scoreboard players add @s respawnCooldo
 execute as @a if entity @s[tag=dead,scores={respawnCooldown=200}] at @s run function fallen_world:stats/respawn
 execute as @a if entity @s[scores={respawnCooldown=200..}] run scoreboard players set @s respawnCooldown 0
 
-# execute as @a[gamemode=!creative,gamemode=!spectator] run title @s actionbar ["",{"text":"❤ ","color":"red"},{"score":{"name":"@s","objective":"hp"},"color":"red"},{"text":" / ","color":"red"},{"score":{"name":"@s","objective":"max_hp"},"color":"red"},{"text":" \u0020 \u0020 ✠ ","color":"blue","bold":"true"},{"score":{"name":"@s","objective":"defence"},"color":"blue"},{"text":" \u0020 \u0020 ✦ ","color":"gold","bold":"true"},{"score":{"name":"@s","objective":"mana"},"color":"gold"},{"text":" Mana","color":"gold"}]
 execute as @a[gamemode=adventure] run title @s actionbar ["",{"score":{"name":"@s","objective":"hp"},"color":"dark_red"},{"text":" / ","color":"dark_red"},{"score":{"name":"@s","objective":"max_hp"},"color":"dark_red"},{"text":" \uE002 "},{"text":" \u0020 \u0020 ","bold":"true"},{"score":{"name":"@s","objective":"defence"},"color":"blue"},{"text":" \uE011 ","color":"blue"},{"text":" \u0020 \u0020 ","bold":"true"},{"score":{"name":"@s","objective":"mana"},"color":"light_purple"},{"text":" \uE004","bold":"true"},{"text":" \u0020 \u0020 ","bold":"true"},{"score":{"name":"@s","objective":"rubys"},"color":"white"},{"text":" \uE000"}]
 
 # Vanilla max-health: 400
@@ -189,11 +187,6 @@ execute as @a run attribute @s generic.max_health base set 2000
 effect give @a minecraft:instant_health 3 100 true
 
 #@@@@@@@@@ Spell System @@@@@@@@@#
-
-# execute as @a[scores={usedWand=0}] at @s unless block ~ ~-1 ~ air run effect clear @s minecraft:slow_falling
-
-# execute as @a[scores={usedLeftWand=1..,attackCooldown=60..}] at @s run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/directory
-# execute as @a[scores={usedWand=1..,attackCooldown=60..}] at @s run function fallen_world:spells/directory
 
 # When using the wand (left click). Run the command at the enemie you are trying to hit. Useful for spawning fireballs etc.
 execute as @a[scores={usedLeftWand=1..}] at @s run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/directory
@@ -217,5 +210,3 @@ execute as @a[scores={e=1..}] run scoreboard players set @s e 0
 
 #give @p oak_sign{BlockEntityTag:{Text2:'{"text":"[Input]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger rubyInput"}}',Text3:'{"text":"\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger rubyInput"}}'}} 1
 #give @p oak_sign{BlockEntityTag:{Text2:'{"text":"[Output]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger rubyOutput"}}',Text3:'{"text":"\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger rubyOutput"}}'}} 1
-
-# kill @e[tag=Zombo]

@@ -4,7 +4,7 @@ advancement revoke @s only fallen_world_utility:stone_hammer
 
 clear @s minecraft:knowledge_book
 
-give @s stone_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Stone Hammer","color":"white","italic":false}',Lore:['{"text":"COMMON","color":"blue","italic":false,"bold":true}']}}
+give @s stone_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Stone Hammer","color":"white","italic":false}'}}
 
 scoreboard players add @s xp 2
 
