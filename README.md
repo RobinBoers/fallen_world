@@ -2,21 +2,20 @@
 
 This is a Minecraft RPG, but without any plugins or stuff. It's all vanilla minecraft commands, scoreboards and loottables.
 
-Some great people helped me with this project. If you want to see all of them, take a look at the [credits](CREDITS.md).
+While the project isnt't finished yet, there are a lot of people who helped me. I really appriciate their help and feedback. If you want to see all of them, take a look at the [credits](CREDITS.md).
 
 This project uses multiple namespaces:
 
 - **fallen_world:** this namespace is used for most functions
-- **fallen_world_recipes:** used for custom crafting recipes
-- **fallen_world_tools:** used for functions to actually craft the tools
+- **fallen_world_tools:** used for crafting custom weapons and tools
 - **fallen_world_utility:** used for advancements to trigger events
 
 If you want to see it in action, watch this video: <https://www.youtube.com/watch?v=5FoCYP8VX8I>
 
 **Note:** Yes, I do use Wurst in the video. No, I don't hack on public servers.  
-But who said I can't cheat on my own worlds?
+But who said I can't cheat in my own worlds?
 
-## Stuff included
+## What I made so far
 
 ### Done
 
@@ -25,25 +24,27 @@ This project is far from completion. But these are the things included:
 - Dungeons
 - Custom menu
 - NPC's (with dialog)
-- Custom map
-- Custom health system
+- Custom map made with WorldPainter and WorldEdit
+- Custom health system (but it needs to be rewritten, because it is to buggy)
 - Custom items
-- Spells
+- Spells and wands
 - Currency system (Rubies)
-- Waypoints
-- Quests (only one at this point)
+- Waypoints / warppoints
+- Quests (only one at this point, but I'm working on the storyline)
 - Shops
-- More stuff
-- Resourcepack to make stuff look good
+- Resourcepack for custom textures, models and icons / fonts
 
 ### To DO
 
 These are the things I still need to do:
 
-- Fix mob armor
+- Create enemies and spawning system
 - Balance combat / spells system
-- Finish lava dungeon
-- Actually finish building the map
+- Finish Lava Dungeon
+- Finish the Dark Forest and Ice Peak + surrounding mountain villages
+- Expand Zlamouth
+
+[Click here for the storyline sor far](STORY.md)
 
 ## Other datapacks
 
