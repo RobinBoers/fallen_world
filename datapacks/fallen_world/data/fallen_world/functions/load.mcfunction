@@ -41,6 +41,7 @@ scoreboard objectives add hp dummy {"text":"❤","color":"red"}
 scoreboard objectives add max_hp dummy
 scoreboard objectives add hunger food
 scoreboard objectives add mana dummy
+scoreboard objectives add touchingWater dummy
 
 scoreboard objectives add usedGapple minecraft.used:minecraft.golden_apple
 scoreboard objectives add usedGodapple minecraft.used:minecraft.enchanted_golden_apple

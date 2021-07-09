@@ -41,11 +41,20 @@ execute as @a if entity @s[scores={dialogVill=43}] run tellraw @s ["",{"text":"[
 execute as @a if entity @s[scores={dialogVill=51}] run tellraw @s ["",{"text":"[Jonas] ","color":"blue"},{"text":"Hi there!"}]
 execute as @a if entity @s[scores={dialogVill=53}] run tellraw @s ["",{"text":"[Jonas] ","color":"blue"},{"text":"If you want to access your Rubys, click the output sign!"}]
 
+execute as @a if entity @s[scores={dialogVill=61}] run tellraw @s ["",{"text":"[Thomas] ","color":"gold"},{"text":"Hello stranger. \nOur village has been pillages by Pirates."}]
+execute as @a if entity @s[scores={dialogVill=63}] run tellraw @s ["",{"text":"[Thomas] ","color":"gold"},{"text":"I need your help defeating them.§c< Right click to accept Quest >"}]
+execute as @a if entity @s[scores={dialogVill=65}] run tellraw @s ["",{"text":"[Thomas] ","color":"gold"},{"text":"Thank you stranger. Their HQ is in the center of this vulcano. Follow the path to find it."}]
+
+execute as @a if entity @s[scores={dialogVill=71}] run tellraw @s ["",{"text":"[Ruby] ","color":"red"},{"text":"Hello Bandit. \nWelcome to Pirate Bay."}]
+execute as @a if entity @s[scores={dialogVill=73}] run tellraw @s ["",{"text":"[Ruby] ","color":"red"},{"text":"To unlock your warp point, stand on the golden block."}]
+
 ### Show popup when accepting a Quest
 execute as @a if entity @s[scores={dialogVill=9}] run advancement grant @s only fallen_world_utility:start_simple_delivery
+execute as @a if entity @s[scores={dialogVill=65}] run advancement grant @s only fallen_world_utility:start_free_pirate_bay
 
 ### Set score to quest number
 execute as @a if entity @s[scores={dialogVill=9}] run scoreboard players set @s cQuest 1
+execute as @a if entity @s[scores={dialogVill=65}] run scoreboard players set @s cQuest 2
 
 ### Show popup and play sound when completing a Quest
 execute as @a if entity @s[scores={dialogVill=13}] at @s run playsound minecraft:ui.toast.challenge_complete player @s
@@ -80,15 +89,23 @@ execute as @a if entity @s[scores={dialogVill=41}] run scoreboard players add @s
 
 execute as @a if entity @s[scores={dialogVill=51}] run scoreboard players add @s dialogVill 1
 
+execute as @a if entity @s[scores={dialogVill=61}] run scoreboard players add @s dialogVill 1
+execute as @a if entity @s[scores={dialogVill=62}] run scoreboard players add @s dialogVill 1
+
+execute as @a if entity @s[scores={dialogVill=71}] run scoreboard players add @s dialogVill 1
+
 ### Reset score to 0 when accepting/completing Quest (so you dont evoke more by clicking the Quest Villager)
 execute as @a if entity @s[scores={dialogVill=9}] run scoreboard players set @s dialogVill 0
 execute as @a if entity @s[scores={dialogVill=15}] run scoreboard players set @s dialogVill 0
 execute as @a if entity @s[scores={dialogVill=43}] run scoreboard players set @s dialogVill 0
 execute as @a if entity @s[scores={dialogVill=53}] run scoreboard players set @s dialogVill 0
+execute as @a if entity @s[scores={dialogVill=65}] run scoreboard players set @s dialogVill 0
+execute as @a if entity @s[scores={dialogVill=73}] run scoreboard players set @s dialogVill 0
 
 ### Show current Quest in chat when using /trigger currentQuest
 execute as @a[scores={currentQuest=1,cQuest=0}] run tellraw @s ["",{"text":"Current Quest:","color":"gold"},{"text":" None\n"},{"text":"You currently are not doing a Quest"}]
 execute as @a[scores={currentQuest=1,cQuest=1}] run tellraw @s ["",{"text":"Current Quest:","color":"gold"},{"text":" A Simple Delivery\n"},{"text":"Task:","color":"dark_aqua"},{"text":" Travel to Zlamouth and give Pauls package to Ruby."}]
+execute as @a[scores={currentQuest=1,cQuest=2}] run tellraw @s ["",{"text":"Current Quest:","color":"gold"},{"text":" Free Pirate Bay\n"},{"text":"Task:","color":"dark_aqua"},{"text":" Find the pirate HQ and defeat them once and for all."}]
 
 ## Reset trigger
 execute as @a[scores={currentQuest=1}] run trigger currentQuest set 0

@@ -8,7 +8,7 @@ execute if entity @s[scores={mana=..0}] run tellraw @s "§cNot enough mana"
 execute store result score @s element run data get entity @s SelectedItem.tag.element
 execute store result score @s spellId run data get entity @s SelectedItem.tag.spellId
 
-execute if entity @s[scores={mana=1..,attackCooldown=60..}] run execute if score @s element matches 1 run function fallen_world:spells/fire/directory
+execute if entity @s[scores={mana=1..}] run execute if score @s element matches 1 run function fallen_world:spells/fire/directory
 execute if entity @s[scores={mana=1..}] run execute if score @s element matches 2 run function fallen_world:spells/ice/directory
 execute if entity @s[scores={mana=1..}] run execute if score @s element matches 3 run function fallen_world:spells/air/directory
 

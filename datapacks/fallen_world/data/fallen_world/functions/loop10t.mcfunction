@@ -52,14 +52,15 @@ execute as @a[tag=inVulcano] run bossbar set vulcano players @s
 execute as @a[tag=inIcePeak] run bossbar set icepeak players @s
 
 ### Custom slots
-clear @a book{display:{Name:'{"text":"Spell Slot"}'},CustomModelData:2,SlotItem:1b}
-clear @a elytra{display:{Name:'{"text":"Elytra Slot"}'},CustomModelData:2,SlotItem:1b}
-clear @a apple{display:{Name:'{"text":"Totem Slot"}'},CustomModelData:2,SlotItem:1b}
+clear @a book{display:{Name:'{"text":"Spell Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
+clear @a elytra{display:{Name:'{"text":"Elytra Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
+clear @a apple{display:{Name:'{"text":"Totem Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
 
-execute as @a[nbt=!{Inventory:[{Slot:9b,id:"minecraft:enchanted_book"}]}] run replaceitem entity @s container.9 book{display:{Name:'{"text":"Spell Slot"}'},CustomModelData:2,SlotItem:1b}
-execute as @a[nbt=!{Inventory:[{Slot:10b,id:"minecraft:elytra"}]}] run replaceitem entity @s container.10 elytra{display:{Name:'{"text":"Elytra Slot"}'},CustomModelData:2,SlotItem:1b}
-execute as @a[nbt=!{Inventory:[{Slot:11b,id:"minecraft:totem_of_undying"}]}] run replaceitem entity @s container.11 apple{display:{Name:'{"text":"Totem Slot"}'},CustomModelData:2,SlotItem:1b}
+execute as @a[nbt=!{Inventory:[{Slot:9b,id:"minecraft:enchanted_book"}]}] run replaceitem entity @s container.9 book{display:{Name:'{"text":"Spell Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
+execute as @a[nbt=!{Inventory:[{Slot:10b,id:"minecraft:elytra"}]}] run replaceitem entity @s container.10 elytra{display:{Name:'{"text":"Elytra Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
+execute as @a[nbt=!{Inventory:[{Slot:11b,id:"minecraft:totem_of_undying"}]}] run replaceitem entity @s container.11 apple{display:{Name:'{"text":"Totem Slot","color":"gray","italic":"false"}'},CustomModelData:2,SlotItem:1b}
 
+# Kill tripwire hook items (they fall on the ground when opening the bank door)
 kill @e[type=item,nbt={Item:{id:"minecraft:tripwire_hook",Count:1b}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:tripwire_hook",Count:2b}}]
 

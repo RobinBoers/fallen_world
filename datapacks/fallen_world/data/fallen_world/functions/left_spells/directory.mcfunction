@@ -10,5 +10,5 @@ execute store result score @s element run data get entity @s SelectedItem.tag.el
 execute store result score @s spellId run data get entity @s SelectedItem.tag.spellId
 
 execute if entity @s[scores={mana=1..}] run execute if score @s element matches 1 run function fallen_world:left_spells/fire/directory
-execute if entity @s[scores={mana=1..}] run execute if score @s element matches 2 run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/ice/directory
-execute if entity @s[scores={mana=1..}] run execute if score @s element matches 3 run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/air/directory
+execute if entity @s[scores={mana=1..}] run execute if score @s element matches 2 run function fallen_world:left_spells/ice/directory
+execute if entity @s[scores={mana=1..}] run execute if score @s element matches 3 run function fallen_world:left_spells/air/directory

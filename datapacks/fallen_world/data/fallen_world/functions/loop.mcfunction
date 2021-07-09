@@ -84,7 +84,9 @@ execute as @a[scores={warp=7}] run tellraw @s "§6Warping to the Magical Forest"
 execute as @a[scores={warp=7}] run tp @s -134 77 -177
 
 execute as @a[scores={warp=11}] run tellraw @s "§6Warping to the Vulcano Dungeon"
-execute as @a[scores={warp=11}] run tp @s -134 77 -177
+execute as @a[scores={warp=11}] run tp @s -355 120 138
+
+execute as @a[scores={warp=12}] run tp @s -113 77 -175
 
 execute as @a[scores={warp=1..},tag=!lockedWarp] at @s run playsound minecraft:entity.enderman.teleport ambient @s
 execute as @a[tag=lockedWarp] run tag @s remove lockedWarp
@@ -100,7 +102,7 @@ execute as @a[scores={song1=1..}] run scoreboard players remove @s song1 1
 
 #@@@@@@@@@ Shop System @@@@@@@@@#
 
-function fallen_world:custom_items/shop
+execute as @a[scores={buyItem=1..}] run function fallen_world:custom_items/shop
 
 ### Input or Output rubys
 
@@ -120,8 +122,16 @@ execute as @a[scores={rubyInput=1}] run scoreboard players set @s rubyInput 0
 tag @e[tag=hurt] remove hurt
 tag @e[nbt={HurtTime:10s}] add hurt
 
+# Players die when they hit the water (experimental, not tested yet)
+execute at @a as @s if block ~ ~ ~ water run scoreboard players set @s touchingWater 1
+execute as @a at @s unless block ~ ~ ~ water run scoreboard players set @s touchingWater 0
+
+execute as @a[scores={touchingWater=1}] run function fallen_world:stats/checktotem
+
+# Play sound when hurt
 # execute at @e[tag=hurt] run playsound minecraft:block.note_block.bell master @a ~ ~ ~ 1
 
+# Attack cooldown for weapons (not used anymore)
 scoreboard players add @a attackCooldown 1
 
 scoreboard players set @a defenceFactor 20
@@ -175,7 +185,7 @@ execute as @a[gamemode=adventure] run title @s actionbar ["",{"score":{"name":"@
 bossbar set title players @a
 
 ### Remove Vanilla Health
-execute as @a run attribute @s generic.max_health base set 1000
+execute as @a run attribute @s generic.max_health base set 2000
 effect give @a minecraft:instant_health 3 100 true
 
 #@@@@@@@@@ Spell System @@@@@@@@@#
@@ -185,7 +195,8 @@ effect give @a minecraft:instant_health 3 100 true
 # execute as @a[scores={usedLeftWand=1..,attackCooldown=60..}] at @s run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/directory
 # execute as @a[scores={usedWand=1..,attackCooldown=60..}] at @s run function fallen_world:spells/directory
 
-execute as @a[scores={usedLeftWand=1..}] at @s run function fallen_world:left_spells/directory
+# When using the wand (left click). Run the command at the enemie you are trying to hit. Useful for spawning fireballs etc.
+execute as @a[scores={usedLeftWand=1..}] at @s run execute at @e[tag=hurt,distance=0..30] run function fallen_world:left_spells/directory
 execute as @a[scores={usedWand=1..}] at @s run function fallen_world:spells/directory
 
 #@@@@@@@@@ Emoji Menu @@@@@@@@@#
@@ -198,3 +209,13 @@ execute as @a[scores={e=1..}] run scoreboard players set @s e 0
 #give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 3"}}',Text2:'{"text":"Diamond Hammer \\uE009","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 3"}}',Text3:'{"text":"for 13 \\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 3"}}'}} 1
 #give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 4"}}',Text2:'{"text":"Iron Hammer\\uE010","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 4"}}',Text3:'{"text":"for 7 \\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 4"}}'}} 1
 #give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 5"}}',Text2:'{"text":"Shield \\uE011","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 5"}}',Text3:'{"text":"for 3\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 5"}}'}} 1
+
+#give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 6"}}',Text2:'{"text":"\\uE012","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 6"}}',Text3:'{"text":"for 8\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 6"}}'}} 1
+#give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 7"}}',Text2:'{"text":"\\uE013","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 7"}}',Text3:'{"text":"for 18\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 7"}}'}} 1
+#give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 8"}}',Text2:'{"text":"\\uE014","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 8"}}',Text3:'{"text":"for 12\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 8"}}'}} 1
+#give @p oak_sign{BlockEntityTag:{Text1:'{"text":"[Buy]","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger buyItem set 9"}}',Text2:'{"text":"\\uE015","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 9"}}',Text3:'{"text":"for 6\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger buyItem set 9"}}'}} 1
+
+#give @p oak_sign{BlockEntityTag:{Text2:'{"text":"[Input]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger rubyInput"}}',Text3:'{"text":"\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger rubyInput"}}'}} 1
+#give @p oak_sign{BlockEntityTag:{Text2:'{"text":"[Output]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/trigger rubyOutput"}}',Text3:'{"text":"\\uE000","color":"white","clickEvent":{"action":"run_command","value":"/trigger rubyOutput"}}'}} 1
+
+# kill @e[tag=Zombo]

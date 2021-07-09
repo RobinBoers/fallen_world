@@ -1,4 +1,4 @@
-#@@@@@@@@@ Shop System @@@@@@@@@# 
+#@@@@@@@@@ Shop System @@@@@@@@@# (runs as player with a buyItem score higher than 1)
 
 ### Error message if not enough money
 execute as @a[scores={buyItem=2,rubys=..1}] run tellraw @s "§cNot enough Rubys!"
@@ -15,11 +15,11 @@ execute as @a[scores={buyItem=2,rubys=2..}] run give @s bread 10
 execute as @a[scores={buyItem=2,rubys=2..}] run tellraw @s "§6You have bought 10x \uE008"
 execute as @a[scores={buyItem=2,rubys=2..}] run scoreboard players remove @s rubys 2
 
-execute as @a[scores={buyItem=3,rubys=13..}] run give @s diamond_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Diamond Hammer","color":"white","italic":false}',Lore:['{"text":"RARE","color":"red","italic":false,"bold":true}']}}
+execute as @a[scores={buyItem=3,rubys=13..}] run give @s diamond_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Diamond Hammer","color":"white","italic":false}'}}
 execute as @a[scores={buyItem=3,rubys=13..}] run tellraw @s "§6You have bought a §r§f\uE009"
 execute as @a[scores={buyItem=3,rubys=13..}] run scoreboard players remove @s rubys 13
 
-execute as @a[scores={buyItem=4,rubys=7..}] run give @s iron_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Iron Hammer","color":"white","italic":false}',Lore:['{"text":"UNCOMMON","color":"green","italic":false,"bold":true}']}}
+execute as @a[scores={buyItem=4,rubys=7..}] run give @s iron_axe{HideFlags:63,CustomModelData:3,display:{Name:'{"text":"Iron Hammer","color":"white","italic":false}'}}
 execute as @a[scores={buyItem=4,rubys=7..}] run tellraw @s "§6You have bought a §r§f\uE010"
 execute as @a[scores={buyItem=4,rubys=7..}] run scoreboard players remove @s rubys 7
 
