@@ -44,7 +44,8 @@ These are the things I still need to do:
 - Finish the Dark Forest and Ice Peak + surrounding mountain villages
 - Expand Zlamouth
 
-[Click here for the storyline sor far](STORY.md)
+[Click here for the storyline sor far](STORY.md)  
+[Click here for a list of custom mobs and stuff I want to make (experimental)](MOBS.md)
 
 ## Other datapacks
 
