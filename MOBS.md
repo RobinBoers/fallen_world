@@ -1,52 +1,102 @@
 # Fallen World Mobs
 
+These are the plans for custom mobs. They will follow the default vanilla behavoir, but with custom stats, models and textures.
+
+----
+
 ## The Dark Forest
 
 ### Level 1: Zombie
 
-Regular zombie, retexture.
+| Key  			| Value 												|
+| ------------- | ------------- 										|
+| Base mob  	| Zombie  												|
+| Armor			| None  												|
+| Weapon		| None  												|
+| Texture  		| Zombie with lumberjack clothes and darker skin color  |
 
 ### Level 2: Zombie Warrior
 
-Chainmail armor  
-Wooden sword:
-	- Sharpness III
-	- Knockback
+| Key  			| Value									 |
+| ------------- | ------------- 					 	 |
+| Base mob  	| Zombie  								 |
+| Armor  		| Chainmail  							 |
+| Weapon 		| Wooden sword (Sharpness 3, Knockback)  |
+| Texture  		| Zombie soldier  						 |
 
 ### Level 2: Spiderguards
 
-Only spawn in Blackstone dungeon. Have better armor (gold, but random) and same sword as Zombie Warriors
-
-Have custom skin, zombies with retexture and arms down. Look like spiders.
+| Key  			| Value 													|
+| ------------- | ------------- 											|
+| Base mob  	| Zombie  													|
+| Armor  		| Gold (random, minimal is 2 armor pieces) 					|
+| Weapon 		| Wooden sword (Sharpness 3, Knockback)  					|
+| Texture  		| Spider like  												|
+| Comment  		| Only spawn in Blackstone dungeon. Have their arms down. 	| 
 
 ### Level 3: Zombie Officer
 
-Iron armor with chainmail leggings and helmet
-Golden sword:
-	- Sharpness III
-	- Knockback II
+| Key  			| Value 													|
+| ------------- | ------------- 											|
+| Base mob  	| Zombie  													|
+| Armor  		| Iron armor with chainmail leggings and helment			|
+| Weapon 		| Wooden sword (Sharpness 3, Knockback ||) 					|
+| Texture  		| Same as soldier											|
 	
 ### Boss: TREE MONSTER
 
-Retexture icongolem with custom model
+| Key  			| Value 													|
+| ------------- | ------------- 											|
+| Base mob  	| Iron golem												|
+| Armor  		| None														|
+| Weapon 		| None									 					|
+| Texture  		| Custom texture + model (tree)								|
+
+-----
 
 ## Pirate Bay
 
 ### Level 1: Slave
 
-Regular zombie but retextured and with arms down. Can spawn with wooden swords like Zombie Warriors.
+| Key  			| Value 													|
+| ------------- | ------------- 											|
+| Base mob  	| Zombie  													|
+| Armor  		| None														|
+| Weapon 		| Same as Zombie Warriors				 					|
+| Texture  		| Villagers													|
+| Comment		| Have their arms down										| 
 
 ### Level 2: Ranger Pirates
 
-Skeleton with stray clothes but weirder and the arrows are something else.
+| Key  			| Value 													|
+| ------------- | ------------- 											|
+| Base mob  	| Skeleton 													|
+| Armor  		| None														|
+| Weapon 		| Bow + tipped arrow (what enchantment unsure yet)			|
+| Texture  		| Like strays, but brown									|
 
 ### Level 3: Captain
 
-Captains are like weird squids (like in Pirates of the Caribbean) with swords who are very wither skeleton strength but without wither effect. They are very slow.
+| Key  			| Value 															|
+| ------------- | ------------- 													|
+| Base mob  	| Zombie 															|
+| Armor  		| Full iron 														|
+| Weapon 		| Iron Sword (Sharpness IV)											|
+| Texture  		| Custom model, like the squid things in Pirates of the Caribbean	|
+| Comment		| Very slow. Wither skeleton like, but without wither effect		| 
 
 ### Boss: THICC SQUID / OCTOPUS
 
 The boss is a giant octopus in the ocean between Pirate Bay and the Far Islands. It is a large version of the elder guardian.
+
+| Key  			| Value 															|
+| ------------- | ------------- 													|
+| Base mob  	| Elder guardian													|
+| Armor  		| None		 														|
+| Weapon 		| None																|
+| Texture  		| Make it look like angry squid										|
+
+-----
 
 ## Ice Peak
 
@@ -56,15 +106,27 @@ This is the final region, so the mobs are harder.
 
 Improved vanilla strays (lot stronger).
 
+| Key  			| Value 															|
+| ------------- | ------------- 													|
+| Base mob  	| Stray																|
+| Armor  		| None		 														|
+| Weapon 		| Bow + tipped arrows (but stronger, Power V maybe?)				|
+| Texture  		| Default															|
+
 ### Level 2: Ice Warrior
 
 Basicly very strong zombie.
 
-Iron armor  
-Iron axe:
-	- Sharpness III
+| Key  			| Value 															|
+| ------------- | ------------- 													|
+| Base mob  	| Zombie															|
+| Armor  		| Full iron	 														|
+| Weapon 		| Iron sword (Sharpness III)										|
+| Texture  		| Frozen zombie / cold zombie										|
 
 ### Level 3: Illusioner
+
+Just the Illusioner. For the ones that do not know, the illusioner is a unused vanilla mob. They will be rare, otherwise it would be to hard.
 
 ### Boss: Ice Spikey
 

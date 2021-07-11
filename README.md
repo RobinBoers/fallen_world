@@ -61,3 +61,5 @@ If you have cool ideas, bugfixes, suggestions or anything else, feel free to con
 ## The map
 
 The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net). The map and the datapack are closely intergrated into one and other, so if you want the map, send me an e-mail at robin@geheimesite.nl
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/RobinBoers/fallen_world)
