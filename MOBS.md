@@ -2,8 +2,6 @@
 
 These are the plans for custom mobs. They will follow the default vanilla behavoir, but with custom stats, models and textures.
 
-----
-
 ## The Dark Forest
 
 ### Level 1: Zombie
