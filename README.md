@@ -30,7 +30,7 @@ This project is far from completion. But these are the things included:
 - Spells and wands
 - Currency system (Rubies)
 - Waypoints / warppoints
-- Quests (only one at this point, but I'm working on the storyline)
+- Quests (three at the time of writing, but I'm adding them gradually)
 - Shops
 - Resourcepack for custom textures, models and icons / fonts
 
@@ -40,8 +40,7 @@ These are the things I still need to do:
 
 - Create enemies and spawning system
 - Balance combat / spells system
-- Finish Lava Dungeon
-- Finish the Dark Forest and Ice Peak + surrounding mountain villages
+- Add custom mobs and their loot (from [concept](MOBS.md))
 - Expand Zlamouth
 
 [Click here for the storyline sor far](STORY.md)  
@@ -61,5 +60,3 @@ If you have cool ideas, bugfixes, suggestions or anything else, feel free to con
 ## The map
 
 The map I used is a custom made I made with [WorldPainter](https://www.worldpainter.net). The map and the datapack are closely intergrated into one and other, so if you want the map, send me an e-mail at robin@geheimesite.nl
-
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/RobinBoers/fallen_world)
