@@ -2,15 +2,13 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Fallen World",
-            "obfuscated": true
+            "text": "Joined the Fallen World Beta!"
         },
         "description": {
-            "text": "You're not suppost see this. Please contact me at robin@geheimesite.nl",
-            "obfuscated": true
+            "text": "Welcome to my adventure map. This is an attempt to create a fully featured Minecraft RPG with just vanilla commands and rescourcepacks."
         },
         "icon": {
-            "item": "minecraft:iron_axe"
+            "item": "minecraft:golden_axe"
         },
         "frame": "task",
         "show_toast": true,

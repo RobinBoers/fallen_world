@@ -1,0 +1,24 @@
+# Quest: Attack from Dark Forest
+# Zlamouth is being attacked by a Zombie Army from the Dark Forest. The player needs to help.
+
+# This function spawns the zombie army. Runs at -136 75 -237 (an invisible armor stand is there to use it with commands)
+
+time set midnight
+
+# These commands are identical from the commands in /custom_mobs/plains, but with the addition of Tags:["siege"] at the start, which is used to determine if the siege has ended and reward the player.
+
+# Normal zombies
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 1] Zombie"}'}
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 1] Zombie"}'}
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 1] Zombie"}'}
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 1] Zombie"}'}
+
+# Warrior Zombies
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 2] Zombie Warrior"}',HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:knockback",lvl:1s}]}},{}],ArmorItems:[{id:"minecraft:chainmail_boots",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Boots","color":"white","italic":false}'}}},{id:"minecraft:chainmail_leggings",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Leggings","color":"white","italic":false}'}}},{id:"minecraft:chainmail_chestplate",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Chestplate","color":"white","italic":false}'}}},{id:"minecraft:chainmail_helmet",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Helmet","color":"white","italic":false}'}}}]}
+
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 2] Zombie Warrior"}',HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:knockback",lvl:1s}]}},{}],ArmorItems:[{id:"minecraft:chainmail_boots",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Boots","color":"white","italic":false}'}}},{id:"minecraft:chainmail_leggings",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Leggings","color":"white","italic":false}'}}},{id:"minecraft:chainmail_chestplate",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Chestplate","color":"white","italic":false}'}}},{id:"minecraft:chainmail_helmet",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Helmet","color":"white","italic":false}'}}}]}
+
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 2] Zombie Warrior"}',HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:knockback",lvl:1s}]}},{}],ArmorItems:[{id:"minecraft:chainmail_boots",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Boots","color":"white","italic":false}'}}},{id:"minecraft:chainmail_leggings",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Leggings","color":"white","italic":false}'}}},{id:"minecraft:chainmail_chestplate",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Chestplate","color":"white","italic":false}'}}},{id:"minecraft:chainmail_helmet",Count:1b,tag:{display:{Name:'{"text":"Zombie Warrior Helmet","color":"white","italic":false}'}}}]}
+
+# Zombie Officer
+summon zombie ~ ~ ~ {Tags:["siege"],CustomNameVisible:1b,IsBaby:0b,CanBreakDoors:0b,CustomName:'{"text":"[Lvl 3] Zombie Officer"}',HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{display:{Name:'{"text":"Zombie Officer Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:knockback",lvl:2s}]}},{}],ArmorItems:[{id:"minecraft:iron_boots",Count:1b,tag:{display:{Name:'{"text":"Zombie Officer Boots","color":"white","italic":false}'}}},{id:"minecraft:chainmail_leggings",Count:1b,tag:{display:{Name:'{"text":"Zombie Officer Leggings","color":"white","italic":false}'}}},{id:"minecraft:iron_chestplate",Count:1b,tag:{display:{Name:'{"text":"Zombie Officer Chestplate","color":"white","italic":false}'}}},{id:"minecraft:chainmail_helmet",Count:1b,tag:{display:{Name:'{"text":"Zombie Officer Helmet","color":"white","italic":false}'}}}]}

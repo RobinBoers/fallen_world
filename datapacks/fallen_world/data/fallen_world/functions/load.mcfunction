@@ -121,7 +121,8 @@ scoreboard objectives add sidebarNinja dummy {"text":" ☣ FALLEN WORLD ☣ ","c
 ### Add scoreboards to screen
 scoreboard objectives setdisplay list Levels
 scoreboard objectives setdisplay belowName hp
-scoreboard objectives setdisplay sidebar nothing
+#scoreboard objectives setdisplay sidebar nothing
+scoreboard objectives setdisplay sidebar dialogVill
 
 bossbar add title {"text":" ☣ FALLEN WORLD ☣ ","color":"dark_aqua","bold":"true"}
 bossbar set title color yellow

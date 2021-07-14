@@ -2,6 +2,7 @@
 
 These are the plans for custom mobs. They will follow the default vanilla behavoir, but with custom stats, models and textures.
 
+PS: Quest Villagers can be recognised by their yellow name.
 ## The Dark Forest
 
 ### Level 1: Zombie

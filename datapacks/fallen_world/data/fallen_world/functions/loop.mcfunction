@@ -56,7 +56,7 @@ execute as @a[scores={warp=3}] run tp @s 192 144 -349 91 20
 execute as @a[scores={warp=4,mana=..7},tag=unlockedPirateBay,gamemode=!creative] run tellraw @s "§cNot enough mana to use this warp"
 execute as @a[scores={warp=4,mana=..7},tag=unlockedPirateBay,gamemode=!creative] run tag @s add lockedWarp
 execute as @a[scores={warp=4,mana=8..},tag=unlockedPirateBay,gamemode=!creative] run tellraw @s "§6Warping to Pirate Bay"
-execute as @a[scores={warp=4,mana=8..},tag=unlockedPirateBay] run tp @s -150 80 169
+execute as @a[scores={warp=4,mana=8..},tag=unlockedPirateBay] run tp @s -150 79 169
 execute as @a[scores={warp=4},gamemode=creative] run tp @s -150 80 169
 execute as @a[scores={warp=4,mana=8..},tag=unlockedPirateBay,gamemode=!creative] run scoreboard players remove @s mana 8
 execute as @a[scores={warp=4},tag=!unlockedPirateBay,gamemode=!creative] run tellraw @s "§cWarp for this destination is locked"

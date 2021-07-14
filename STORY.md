@@ -12,7 +12,8 @@ The Plains is the only region that is still free, but it is treatend by the evil
 
 The Dark Forest was a peaceful forest before the kingdom fell, but is now controlled by a corrupted tree monster that has figured out how to craft zombies using black magic. There will be a dungeon here (the Blackstone Dungeon) and a secret village the player can unlock where they can trade with villagers.
 
-**Quest idea:** You can unlock the region by fighting 3 waves of zombies trying to take over Zlamouth.
+**Quest idea:** You can unlock the region by fighting a zombie siege trying to take over Zlamouth.  
+_I implemented this idea into an actual quest which can be started by talking to Richard in the Militair HQ/Weapon Shop_
 
 ## Pirate Bay
 
