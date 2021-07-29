@@ -1,1 +1,6 @@
-{"pack":{"pack_format":1,"description":"Advancements for the Fallen World Beta Package."}}
+{
+    "pack": {
+        "pack_format": 6,
+        "description": "Advancements for the Fallen World Beta Package."
+    }
+}
