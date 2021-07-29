@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {CustomNameVisible:1b,CustomName:'{"text":"[Lvl 1] Pirate"}',HandItems:[{id:"minecraft:wooden_sword",Count:1b,tag:{display:{Name:'{"text":"Pirate Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3s},{id:"minecraft:knockback",lvl:1s}]}},{}]}

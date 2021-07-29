@@ -1,0 +1,3 @@
+summon skeleton ~ ~ ~ {CustomNameVisible:1b,CustomName:'{"text":"[Lvl 3] Captain"}',HandItems:[{id:"minecraft:iron_sword",Count:1b,tag:{display:{Name:'{"text":"Captains Sword","color":"white","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:4s}]}},{}],ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:iron_leggings",Count:1b},{id:"minecraft:iron_chestplate",Count:1b},{id:"minecraft:iron_helmet",Count:1b}]}
+
+# ,tag:{Defence:20} after Count:1b (armor) for defence in the HUD.
