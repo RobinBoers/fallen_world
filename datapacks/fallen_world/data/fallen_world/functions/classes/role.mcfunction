@@ -4,6 +4,7 @@
 
 # Admins can't be in any class.
 execute as @a[team=admin] run scoreboard players set @s Classes 0
+execute as @a[team=mod] run scoreboard players set @s Classes 0
 
 ### Choose Warrior
 execute as @a[scores={Classes=1}] run team join warrior @s
